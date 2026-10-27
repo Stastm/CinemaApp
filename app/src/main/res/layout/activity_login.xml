@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎬"
+            android:textSize="48sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CINEMA"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#E50914"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="СИСТЕМА БРОНИРОВАНИЯ БИЛЕТОВ"
+            android:textSize="10sp"
+            android:textColor="#444444"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- ТАБЫ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:background="#141414"
+            android:padding="4dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnTabLogin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ВОЙТИ"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E50914"
+                android:stateListAnimator="@null"/>
+
+            <Button
+                android:id="@+id/btnTabRegister"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="РЕГИСТРАЦИЯ"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:backgroundTint="#141414"
+                android:stateListAnimator="@null"/>
+
+        </LinearLayout>
+
+        <!-- ФОРМА ВХОДА -->
+        <LinearLayout
+            android:id="@+id/layoutLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ИМЯ ПОЛЬЗОВАТЕЛЯ"
+                android:textSize="9sp"
+                android:textColor="#555555"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите имя"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#444444"
+                android:background="#141414"
+                android:padding="12dp"
+                android:inputType="text"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПАРОЛЬ"
+                android:textSize="9sp"
+                android:textColor="#555555"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите пароль"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#444444"
+                android:background="#141414"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ВОЙТИ"
+                android:textSize="14sp"
+                android:padding="14dp"
+                android:backgroundTint="#E50914"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <!-- ФОРМА РЕГИСТРАЦИИ -->
+        <LinearLayout
+            android:id="@+id/layoutRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ИМЯ ПОЛЬЗОВАТЕЛЯ"
+                android:textSize="9sp"
+                android:textColor="#555555"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etRegUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Придумайте имя"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#444444"
+                android:background="#141414"
+                android:padding="12dp"
+                android:inputType="text"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПАРОЛЬ"
+                android:textSize="9sp"
+                android:textColor="#555555"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etRegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Придумайте пароль"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#444444"
+                android:background="#141414"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПОВТОРИТЕ ПАРОЛЬ"
+                android:textSize="9sp"
+                android:textColor="#555555"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etRegPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Повторите пароль"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#444444"
+                android:background="#141414"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="СОЗДАТЬ АККАУНТ"
+                android:textSize="14sp"
+                android:padding="14dp"
+                android:backgroundTint="#E50914"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <!-- TELEGRAM -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#1a1a1a"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  или  "
+                android:textColor="#333333"
+                android:textSize="11sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#1a1a1a"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTelegram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✈️  Написать оператору в Telegram"
+            android:textSize="12sp"
+            android:backgroundTint="#0088cc"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

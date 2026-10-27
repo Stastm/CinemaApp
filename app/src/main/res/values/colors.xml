@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_dark">#0A0A0A</color>
+    <color name="surface_dark">#141414</color>
+    <color name="surface_variant">#2A2A2A</color>
+    <color name="accent_red">#E50914</color>
+    <color name="accent_red_dark">#B20710</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#AAAAAA</color>
+    <color name="seat_free">#4CAF50</color>
+    <color name="seat_booked">#F44336</color>
+    <color name="seat_selected">#FFC107</color>
+    <color name="colorPrimary">#E50914</color>
+    <color name="colorPrimaryDark">#B20710</color>
+    <color name="colorAccent">#E50914</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etMovieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название фильма *"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etMovieDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etMovieDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Длительность (минуты) *"
+        android:inputType="number"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etMoviePoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя постера (необязательно)"
+        android:inputType="text"/>
+
+</LinearLayout>
